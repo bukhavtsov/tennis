@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.country</OriginalElement>
+  <nodes>
+    <node x="418.75" y="872.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.statistic</node>
+    <node x="333.125" y="648.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.personal_info</node>
+    <node x="259.125" y="0.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.country</node>
+    <node x="0.0" y="200.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.prize_found</node>
+    <node x="87.0" y="672.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.team</node>
+    <node x="195.75" y="920.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen</node>
+    <node x="400.375" y="424.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen_name</node>
+    <node x="192.0" y="200.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.stadium</node>
+    <node x="252.0" y="1168.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.game</node>
+    <node x="87.0" y="376.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.tournament</node>
+    <node x="539.25" y="1168.0">b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.set</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.personal_info">
+      <point x="50.75" y="-75.0" />
+      <point x="348.0" y="847.0" />
+      <point x="447.125" y="847.0" />
+      <point x="0.0" y="87.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.personal_info" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.country">
+      <point x="-57.0" y="-87.0" />
+      <point x="389.875" y="175.0" />
+      <point x="382.125" y="175.0" />
+      <point x="41.0" y="75.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.personal_info" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen_name">
+      <point x="57.0" y="-87.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.tournament" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.prize_found">
+      <point x="-47.75" y="-111.0" />
+      <point x="134.75" y="351.0" />
+      <point x="86.0" y="351.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.game" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.statistic">
+      <point x="45.25" y="-63.0" />
+      <point x="387.75" y="1143.0" />
+      <point x="486.25" y="1143.0" />
+      <point x="-67.5" y="123.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.set" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.statistic">
+      <point x="0.0" y="-63.0" />
+      <point x="67.5" y="123.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.tournament" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.stadium">
+      <point x="47.75" y="-111.0" />
+      <point x="230.25" y="351.0" />
+      <point x="279.0" y="351.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.stadium" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.country">
+      <point x="0.0" y="-63.0" />
+      <point x="279.0" y="175.0" />
+      <point x="300.125" y="175.0" />
+      <point x="-41.0" y="75.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.team">
+      <point x="-50.75" y="-75.0" />
+      <point x="246.5" y="847.0" />
+      <point x="182.5" y="847.0" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.team" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.tournament">
+      <point x="0.0" y="-63.0" />
+      <point x="0.0" y="111.0" />
+    </edge>
+    <edge source="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.game" target="b52a8fdc-834d-4ec4-b6ee-95a456577f82.TABLE:postgres.tennis.sportsmen">
+      <point x="-45.25" y="-63.0" />
+      <point x="0.0" y="75.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3660598179453838" x="145.83438022838232" y="644.2682060390761" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
