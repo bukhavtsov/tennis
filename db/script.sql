@@ -105,14 +105,17 @@ create unique index team_id_uindex
 
 create table if not exists sportsmen
 (
-    id            serial  not null
+    id            serial      not null
         constraint sportsmen_pk
             primary key,
     points_amount integer,
     rating_number integer,
-    team_id       integer not null
-        constraint sportsmen_team_id_fk
-            references team
+    first_name    varchar(35) not null,
+    last_name     varchar(35),
+    country_id    integer     not null
+        constraint sportsmen_country_id_fk
+            references country
+            on update cascade on delete cascade
 );
 
 alter table sportsmen
@@ -191,7 +194,7 @@ create unique index set_id_uindex
 
 --Create sportsmen_rating table
 
-create table sportsmen_rating
+create table if not exists sportsmen_rating
 (
     id            serial  not null
         constraint sportsmen_rating_pk
@@ -212,7 +215,7 @@ create unique index sportsmen_rating_id_uindex
 
 --Create team_member table
 
-create table team_member
+create table if not exists team_member
 (
     id           serial  not null
         constraint team_member_pk
@@ -232,3 +235,23 @@ alter table team_member
 
 create unique index team_member_id_uindex
     on team_member (id);
+
+--Create stage table
+
+create table if not exists stage
+(
+    id      serial  not null
+        constraint stage_pk
+            primary key,
+    number  integer not null,
+    game_id integer not null
+        constraint stage_game_id_fk
+            references game
+            on update cascade on delete cascade
+);
+
+alter table stage
+    owner to postgres;
+
+create unique index stage_id_uindex
+    on stage (id);
