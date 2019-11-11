@@ -6,8 +6,7 @@ create table if not exists country
             primary key,
     iso2      varchar(2)  not null,
     iso3      varchar(3)  not null,
-    name      varchar(80) not null,
-    phonecode integer     not null
+    name      varchar(80) not null
 );
 
 alter table country
@@ -25,7 +24,7 @@ create table if not exists stadium
         constraint stadium_country_id_fk
             references country
             on update cascade on delete cascade,
-    coating    varchar(100) not null
+    surface    varchar(100) not null
 );
 
 alter table stadium
@@ -41,7 +40,7 @@ create table if not exists prize_found
     id          serial  not null
         constraint prize_found_pk
             primary key,
-    round       integer not null,
+    round       varchar(10) not null,
     points      integer not null,
     prize_money money   not null
 );
